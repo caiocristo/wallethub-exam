@@ -19,6 +19,11 @@ public class AccessLogParser {
 
     AccessLogService accessLogService = new AccessLogService();
     ScanService scanService = new ScanService();
+    String accessLogFile;
+
+    public AccessLogParser(String accessLog) {
+        accessLogFile = accessLog;
+    }
 
     /**
      * Parse file and save to DB
@@ -28,7 +33,7 @@ public class AccessLogParser {
         if(!isScanned()) {
             log.info("initing Access.log scan");
             try {
-                File f = new File("access.log");
+                File f = new File(accessLogFile);
                 BufferedReader b = new BufferedReader(new FileReader(f));
                 String readLine = "";
                 log.info("Parsing file");

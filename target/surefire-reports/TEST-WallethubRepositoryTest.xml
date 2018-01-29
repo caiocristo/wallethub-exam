@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="WallethubRepositoryTest" time="1.851" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="WallethubRepositoryTest" time="1.662" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2017.2.6"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,7 +63,7 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="WallethubRepositoryTest" name="persistScan" time="1.841"/>
-  <testcase classname="WallethubRepositoryTest" name="persistBlocked" time="0.005"/>
-  <testcase classname="WallethubRepositoryTest" name="persistAccessLog" time="0.005"/>
+  <testcase classname="WallethubRepositoryTest" name="persistScan" time="1.652"/>
+  <testcase classname="WallethubRepositoryTest" name="persistBlocked" time="0.004"/>
+  <testcase classname="WallethubRepositoryTest" name="persistAccessLog" time="0.006"/>
 </testsuite>

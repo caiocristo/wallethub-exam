@@ -27,15 +27,17 @@ public class Cli {
     private long threshold;
     private String duration;
     private Date endDate;
+    private String accessLog;
 
     public Cli(String[] args) {
 
         this.args = args;
 
         options.addOption("h", "help", false, "show help.");
-        options.addOption("startDate", "sd", true, "Start date - ex: 2017-01-01.13:00:00");
-        options.addOption("duration", "d", true, "Duration - ex: hourly");
-        options.addOption("threshold", "t", true, "Threshold - ex:100");
+        options.addOption("accesslog", "al", true, "--accesslog /path/to/file");
+        options.addOption("startDate", "sd", true, "--startDate 2017-01-01.13:00:00");
+        options.addOption("duration", "d", true, "--duration hourly");
+        options.addOption("threshold", "t", true, "--threshold 100");
 
     }
 
@@ -48,6 +50,14 @@ public class Cli {
 
             if (cmd.hasOption("h"))
                 help();
+
+            if (cmd.hasOption("accesslog")) {
+                log.log(Level.INFO, "Using cli argument -accesslog=" + cmd.getOptionValue("accesslog"));
+                accessLog = cmd.getOptionValue("accesslog");
+            } else {
+                log.log(Level.SEVERE, "MIssing accesslog option");
+                help();
+            }
 
             if (cmd.hasOption("startDate")) {
                 log.log(Level.INFO, "Using cli argument -startDate=" + cmd.getOptionValue("startDate"));
@@ -95,7 +105,7 @@ public class Cli {
 
     private void run(){
         //read and parse access.log
-        AccessLogParser accessLogParser = new AccessLogParser();
+        AccessLogParser accessLogParser = new AccessLogParser(accessLog);
         accessLogParser.parse();
 
         search();
