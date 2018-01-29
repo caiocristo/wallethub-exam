@@ -1,0 +1,12 @@
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/service/BaseService.java
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/entities/Scan.java
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/entities/AccessLog.java
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/entities/BlockedAccess.java
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/com/ef/Parser.java
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/service/ScanService.java
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/util/HibernateUtil.java
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/util/DateUtils.java
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/service/BlockedAccessService.java
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/util/Cli.java
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/util/AccessLogParser.java
+/Users/caiocristo/Documents/code/workspace/wallethub-exam/src/main/java/service/AccessLogService.java

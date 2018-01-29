@@ -19,8 +19,6 @@ public class AccessLogParser {
 
     AccessLogService accessLogService = new AccessLogService();
     ScanService scanService = new ScanService();
-    int aux =1;
-
 
     /**
      * Parse file and save to DB
@@ -53,6 +51,10 @@ public class AccessLogParser {
         scanService.save(new Scan(null,new Date()));
     }
 
+    /**
+     * Tokenize the line, build AccessLog entity and persist to database
+     * @param readLine
+     */
     private void parseLine(String readLine) {
         AccessLog accessLog = new AccessLog();
         String date;

@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.logging.Logger;
 
 /**
- * Parse date from file or input
+ * Parse string to date and add hours to date
  */
 public class DateUtils {
     private static final Logger log = Logger.getLogger(DateUtils.class.getName());

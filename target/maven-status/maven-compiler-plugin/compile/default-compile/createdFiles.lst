@@ -1,0 +1,12 @@
+service/ScanService.class
+entities/BlockedAccess.class
+entities/Scan.class
+util/DateUtils.class
+util/HibernateUtil.class
+entities/AccessLog.class
+com/ef/Parser.class
+service/BaseService.class
+util/AccessLogParser.class
+util/Cli.class
+service/AccessLogService.class
+service/BlockedAccessService.class
